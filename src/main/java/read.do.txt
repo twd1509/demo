@@ -1,0 +1,20 @@
+읽고있는 게시물 카운트증가
+
+BoardController(/read.do)
+->nowPage 파라미터 받기
+->게시물 num 파라미터 받기
+->num에 대한 게시물 카운트증가(Service.Upcount(num)호출)
+  ->BoardService.upcount(num)
+    ->repository.findById(num)
+    ->전달받은 게시물의 count를 1증가
+    ->repository.save(board) 저장
+    ->read.do 컨트롤러로 돌아옴(리턴)
+  ->BoardService.getBoard(num)
+    ->repository.findById(num)
+    ->read.do 컨트롤러로 돌아옴(board게시물 리턴)
+->세션에 추가(board)
+->세션에 추가(nowPage)
+->모델에 추가(board)
+->모델에 추가(nowPage)
+->/read.html 로 이동
+
