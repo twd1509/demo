@@ -14,7 +14,7 @@ import org.springframework.data.domain.Sort;
 
 class DemoApplicationTests {
 
-	@Autowired
+	/*@Autowired
 	private BoardRepository boardRepo;
 
 	@Test
@@ -68,7 +68,7 @@ class DemoApplicationTests {
 		{
 			System.out.println(board);
 		}
-	}
+	}*/
 
 
 
