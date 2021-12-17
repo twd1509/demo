@@ -123,7 +123,7 @@ public class BoardController {
         return "read.html";
     }
 
-
+    //Test
     @PostMapping("/isupdate.do")
     public String isupdate(BoardDTO dto,Model model){
         model.addAttribute("dto",dto);
